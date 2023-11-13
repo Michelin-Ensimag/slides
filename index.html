@@ -1,40 +1,97 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>Clash Of Code</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/michelin-designsystem.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown>
+          <textarea data-template>
+#### Login
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+- https://www.codingame.com/login
+- Copilot Github Account is ok, other accounts are ok
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+![Login](img/login.png)
+
+Note:
+---
+### Join a Clash
+
+- Click link from teams 
+
+Note:
+---
+### Playground
+![Clash](img/clash.png)
+---
+#### Clash Types
+
+- **Fastest:**
+ Solve the problem as quickly as possible.
+
+- **Shortest:**
+ Write the shortest possible solution that still works correctly. **Time is not important.**
+
+- **Reverse:**
+ The challenge is to produce a solution that matches a given output, rather than starting from an input. **Solve the problem as quickly as possible.**
+
+Note:
+---
+### Final Ranking Explanation
+1. **Number of Challenges Completed:**
+- Participants who have a score (summit a result) in more challenges will rank higher.
+
+2. **Sum of Rankings:**
+- 1st place = 1 point
+- 2nd place = 2 points
+- 3rd place = 3 points
+- Participants with the lowest total points will rank higher if they have the same number of challenges completed.
+
+Note:
+        </textarea
+          >
+        </section>
+        <!-- Slide Q&A -->
+        <section
+          class="qa-slide"
+          style="position: relative; text-align: center"
+        >
+          <img class="qa-image" src="./img/eb002314.jpg" alt="Michelin Man" />
+          <p class="qa-content">🚀blogit.michelin.io🚀</p>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        /* view: 'scroll',
+				scrollProgress: true, */
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
