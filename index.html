@@ -32,7 +32,10 @@ Note:
 Note:
 ---
 ## Alex
-3 min
+
+- Roady pour les autres IT
+- Veille techno & innovation
+- Support build & run
 
 ---
 ## Cyriane
@@ -64,9 +67,35 @@ Note:
 
 ---
 ## Kafka
-5 min
+
+Developpé par Linkedin à l'origine (2011), repris par la fondation Apache (2012)
+Création de Confluent (les créateurs du projet) en parallèle.
+
+Une plateforme de streaming d’événements distribuée
+Peut gérer des flux de données en temps réel
+Fonctionnement en publication / abonnement
 
 ---
+
+Kafka est une plateforme de streaming **d’événements** où les **producteurs** envoient des **messages** à des **topics**. Chaque **topic** est divisé en **partitions** pour une meilleure gestion des données. Les **brokers** stockent ces **messages** et les **consommateurs** les lisent en temps réel. Kafka assure la haute disponibilité et la résilience grâce à la réplication des **partitions** sur plusieurs nœuds du **cluster**.
+
+---
+
+Points clés: 
+* Streaming de données
+* Haute résilience - les données sont multi-répliquées sur les nœuds du cluster et persistantes pendant une période configurable
+* Faible latence
+* Consommation parallèle des données - plusieurs consommateurs peuvent consommer les mêmes données en même temps
+* Sécurité
+* Scalabilité
+* Performance
+
+---
+
+<img class="qa-image" style="height: 15em;"  src="./img/Kafka-Operational-Architecture-Diagram.png" alt="Schema Kafka" />
+
+---
+
 ## OpenTelemetry
 5 min
 
