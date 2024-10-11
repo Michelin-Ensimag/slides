@@ -69,6 +69,8 @@ $overlayElementFgColor: #f0f0f0; // Overlay foreground color (near white)
   }
 
   .presenter-name {
+    display: inline;
+    font-size: 0.8em; 
     font-style: italic; 
   }
 
