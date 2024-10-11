@@ -20,8 +20,8 @@
     <div class="reveal">
       <div class="slides">
         <section class="first-slide">
-          <h3 class="first-title">Workshop Ensimag</h3>
-          <!-- <p class="first-subtitle">at Michelin</p> -->
+          <h3 class="first-title">Le côté ops de la Force</h3>
+          <p class="first-subtitle">@ Michelin</p>
           <img src="./img/qr-code.png" alt="https://github.com/Michelin-Ensimag" />
           <p class="company-name">blogit.michelin.io</p>
           <p class="presenter-name">Alex Picarle</p>
@@ -31,11 +31,6 @@
         </section>
         <section data-markdown>
           <textarea data-template>
-## Le côté ops de la Force
-
-
-Note:
----
 ## Michelin
 
 Note:
@@ -52,10 +47,10 @@ Note:
 
 Note:
 ---
-## Emilien
-- Troubleshooter au quotidien
-- Moitié sur améliorer le quotidien 
-- Moitié pompier
+## Emilien : SRE
+- Software Engineer appliqué à la prod
+- Moitié sur améliorer le quotidien
+- Moitié troubleshooter
 
 Note:
 ---
@@ -67,10 +62,8 @@ Note:
 
 ---
 ## L'Atelier
-2 min
 
-- une capture d'écran finale
-- un schema d'architecture
+<img class="qa-image" style="height: 15em;" src="./img/Kafka-Operational-Architecture-Diagram.png" alt="Schema Kafka" />
 
 ---
 ## Ansible
@@ -88,16 +81,16 @@ Fonctionne avec des playbooks (~code de déploiement)
 ---
 ## Kafka
 
-Developpé par Linkedin à l'origine (2011), repris par la fondation Apache (2012)
-Création de Confluent (les créateurs du projet) en parallèle.
-
 Une plateforme de streaming d’événements distribuée
 Peut gérer des flux de données en temps réel
 Fonctionnement en publication / abonnement
 
 ---
 
-Kafka est une plateforme de streaming **d’événements** où les **producteurs** envoient des **messages** à des **topics**. Chaque **topic** est divisé en **partitions** pour une meilleure gestion des données. Les **brokers** stockent ces **messages** et les **consommateurs** les lisent en temps réel. Kafka assure la haute disponibilité et la résilience grâce à la réplication des **partitions** sur plusieurs nœuds du **cluster**.
+* Les **producteurs** envoient des **messages** à des **topics**. 
+* Chaque **topic** est divisé en **partitions** pour une meilleure gestion des données.
+* Les **brokers** stockent ces **messages** et les **consommateurs** les lisent en temps réel. 
+* Kafka assure la haute disponibilité et la résilience grâce à la réplication des **partitions** sur plusieurs nœuds du **cluster**.
 
 ---
 
@@ -113,18 +106,49 @@ Points clés:
 ---
 
 <img class="qa-image" style="height: 15em;"  src="./img/Kafka-Operational-Architecture-Diagram.png" alt="Schema Kafka" />
+          </textarea>
+        </section>
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+## OpenTelemetry ?
+
+- Ensemble d'outils et d'API pour la collecte de télémétrie
+- Améliore l'observabilité des applications
+- Standardisation de la collecte de données
 
 ---
 
-## OpenTelemetry
-5 min
+### Composants principaux
+
+- **Collecteurs**
+  - Recueillent et transmettent les données
+- **API et SDK**
+  - Interfaces pour instrumenter les applications
+- **Exporters**
+  - Envoient les données vers des systèmes tiers (ex. : Prometheus, Tempo, Loki, ...)
 
 ---
-## Let's go
 
+## Architectures modernes
 
-        </textarea
-          >
+- Suivi des performances dans les microservices
+- Identification des problèmes en temps réel
+- Amélioration de la collaboration entre les équipes de développement
+
+---
+
+### Bénéfices concrets
+
+- Meilleure visibilité sur l'état des applications
+- Détection rapide des anomalies
+- Optimisation des performances et de la fiabilité
+
+            </textarea>
+          </section>
+        </section>
+        <section data-markdown>
+          ## Let's go !
         </section>
         <!-- Slide Q&A -->
         <section

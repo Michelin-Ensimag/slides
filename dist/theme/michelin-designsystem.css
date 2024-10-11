@@ -367,12 +367,12 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 }
 .first-slide .first-title {
   font-family: "Montserrat", sans-serif;
-  font-size: 2em;
+  font-size: 1.2em;
   margin-top: 0.2em;
   margin-bottom: 0.1em;
 }
 .first-slide .first-subtitle {
-  font-size: 1.8em;
+  font-size: 1.0em;
   margin-top: 0.1em;
 }
 .first-slide .presenter-name, .first-slide .company-name {
